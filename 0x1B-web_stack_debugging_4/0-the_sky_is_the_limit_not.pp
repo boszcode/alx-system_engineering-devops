@@ -1,4 +1,4 @@
-# Increases maximum open files limit in nginx configuration
+#Raises the maximum limit for open files in the nginx configuration
 
 exec {'increase_limit':
   command  => 'sudo sed -i "s/15/4096/" /etc/default/nginx',

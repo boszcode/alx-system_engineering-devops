@@ -1,4 +1,4 @@
-# Makes is possible to login with 'holberton' user and open a file without error message
+#Enables successful login using the 'holberton' username and allows opening a file withot encountering any error messages
 
 exec {'update hard limit':
   command  => 'sudo sed -i "/holberton hard/s/5/4000/" /etc/security/limits.conf',
